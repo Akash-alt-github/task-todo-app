@@ -52,7 +52,7 @@ try:
             if get_task:
                 old_task = all_tasks[get_task-1]['task_name']
                 edited_task = input(f"Edit: {old_task} -> ")
-                is_done = bool(input("Please Enter 'Done' if it is done, else ignore and 'enter': "))
+                is_done = bool(input("Enter 'Done' if it is done, else ignore and 'enter': "))
                 updated_at = datetime.datetime.now().isoformat()
 
                 all_tasks[get_task-1]['task_name'] = edited_task
